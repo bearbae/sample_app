@@ -52,6 +52,7 @@ en:
     error_email: "invalid_email_password_combination"
     create_succeed: "Tao thanh cong"
     not_find: "Not found user"
+    not_find_relationship: "Not found relationship"
     update: "Cap nhat thanh cong"
     login_succed: "Welcome to the sample app!"
     delete_user: "User deleted"
@@ -66,6 +67,8 @@ en:
     resert_succeed: "Reset password success"
     user_actived: "User is in_actived!"
     password_resert_announce: "Password reset has expired."
+    follower: "Followers"
+    following: "Following"
   product:
     notice_1: "Product was successfully created."
     notice_2: "Product was successfully updated."

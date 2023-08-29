@@ -25,8 +25,18 @@ User.create!(name: "Example User",
                activated_at: Time.zone.now)
 end
 
+
 users = User.order(:created_at).take(Settings.digit_6)
 30.times do
   content = Faker::Lorem.sentence(word_count: Settings.digit_5)
   users.each { |user| user.microposts.create!(content: content) }
 end
+
+users = User.all
+user = users.first
+following = users[2..20]
+followers = users[3..15]
+following.each{|followed|
+user.follow(followed)}
+followers.each{|follower|
+follower.follow(user)}
