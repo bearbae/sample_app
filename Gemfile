@@ -31,10 +31,12 @@ gem "jbuilder"
 # gem "redis", "~> 4.0"
 gem "config"
 gem "faker"
+
 gem "i18n"
 gem "i18n-js"
 gem "pagy"
 gem "rails-i18n"
+gem "figaro"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

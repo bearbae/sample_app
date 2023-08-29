@@ -16,4 +16,5 @@ Rails.application.routes.draw do
   post "/signup", to: "users#create"
 
   resources :users, only: %i(new create show edit update index destroy)
+  resources :account_activations, only: :edit
 end
