@@ -42,6 +42,8 @@ en:
     profile: "Profile"
     setting: "Settings"
     account: "Account"
+    delete: "Delete"
+    sure: "You sure?"
   users:
     create_account: "Create_account"
     sign_up: "Sign_up"
@@ -75,3 +77,8 @@ en:
   mailers:
     subject: "Account activation"
     password_resert: "Password reset"
+  microposts:
+    created: "Micropost created!"
+    delete: "Micropost deleted"
+    delete_fail: "Deleted fail"
+    invalid: "Micropost invalid"
