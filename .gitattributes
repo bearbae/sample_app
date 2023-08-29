@@ -11,4 +11,3 @@ vendor/* linguist-vendored
 
 *.scss linguist-language=SCSS
 *.sass linguist-language=Sass
-

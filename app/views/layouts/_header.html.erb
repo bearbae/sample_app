@@ -6,7 +6,7 @@
         <li><%= link_to t("views.home"), "#" %></li>
         <li><%= link_to t("views.help"), "#" %></li>
         <% if logged_in? %>
-          <li><%= link_to t("views.user"), "#" %></li>
+          <li><%= link_to t("views.user"), users_path %></li>
           <li class="dropdown">
             <%= link_to "#", {class: "dropdown-toggle", "data-toggle" => "dropdown"} do %>
               <%= t("views.account") %>
