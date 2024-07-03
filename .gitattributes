@@ -7,3 +7,4 @@ db/schema.rb linguist-generated
 # Mark any vendored files as having been vendored.
 vendor/* linguist-vendored
 
+*.rb   whitespace=space-before-tab,indent-with-non-tab,trailing-space
