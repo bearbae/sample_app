@@ -1,3 +1,4 @@
+
 # Rails tutorial - Sample App
 
 # 1. Phiên bản cài đặt để chạy được dự án:
@@ -12,4 +13,7 @@
 - Bật server: rails s
 Truy cập đường dẫn http://localhost:3000/ hiển thị Rails là thành công
 
+
+
+# sample_app
 
