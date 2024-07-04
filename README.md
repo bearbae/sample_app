@@ -18,3 +18,6 @@ Truy cập đường dẫn http://localhost:3000/ hiển thị Rails là thành 
 # sample_app
 - Push test
 >>>>>>> d5ecbea9778caaffaa0650836bbaa0f95734302d
+
+
+# READY
