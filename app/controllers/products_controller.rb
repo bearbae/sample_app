@@ -25,7 +25,7 @@ class ProductsController < ApplicationController
       if @product.save
         format.html do
           redirect_to product_url(@product),
-                      notice: "Product was successfully created."
+                      notice: t("product.notice_1")
         end
         format.json{render :show, status: :created, location: @product}
       else
@@ -43,7 +43,7 @@ class ProductsController < ApplicationController
       if @product.update(product_params)
         format.html do
           redirect_to product_url(@product),
-                      notice: "Product was successfully updated."
+                      notice: t("product.notice_2")
         end
         format.json{render :show, status: :ok, location: @product}
       else
@@ -62,7 +62,7 @@ class ProductsController < ApplicationController
     respond_to do |format|
       format.html do
         redirect_to products_url,
-                    notice: "Product was successfully destroyed."
+                    notice: t("product.notice_3")
       end
       format.json{head :no_content}
     end

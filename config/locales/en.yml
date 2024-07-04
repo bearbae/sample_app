@@ -38,4 +38,7 @@ en:
     home: "Home"
     help: "Help"
     login: "Log In"
-
+  product:
+    notice_1: "Product was successfully created."
+    notice_2: "Product was successfully updated."
+    notice_3: "Product was successfully destroyed."
