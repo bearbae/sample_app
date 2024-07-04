@@ -2,8 +2,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find_by id: params[:id]
     return if @user
-
-
     flash[:warning] = t("controller.not_find")
     redirect_to root_path
   end
@@ -15,8 +13,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      reset_session
+      log_in @user
       flash[:success] = t("controller.create_succeed")
-
       redirect_to @user, status: :see_other
     else
       render :new, status: :unprocessable_entity
