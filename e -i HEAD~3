@@ -1,0 +1,93 @@
+[33mcommit f34271707cb9e1272ebaf52ee4fc5e8fc34cd3d4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mchapter_7[m[33m)[m
+Author: Doan Quoc Tien <doanquoctien3005@gmail.com>
+Date:   Tue Jul 9 12:48:18 2024 +0700
+
+    Chapter_7
+
+[33mcommit a7180ac45ec900b6fc186f48406652cbd3b46d7a[m[33m ([m[1;31morigin/chapter_7[m[33m)[m
+Author: Doan Quoc Tien <doanquoctien3005@gmail.com>
+Date:   Fri Jul 5 23:45:33 2024 +0700
+
+    Chapter_7
+
+[33mcommit a1e9b02a2db1c3c56909a667398d33fee2cb356b[m
+Author: Doan Quoc Tien <doanquoctien3005@gmail.com>
+Date:   Fri Jul 5 15:14:36 2024 +0700
+
+    chapter_6
+
+[33mcommit b5956fa1431a128f2f1cad0fc20baea563bb1942[m
+Author: Doan Quoc Tien <doanquoctien3005@gmail.com>
+Date:   Fri Jul 5 00:09:21 2024 +0700
+
+    Chapter 3,4,5
+
+[33mcommit be8348615119b36fb4bfcc597680a2dfed1c78a4[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: d8bc373 d5ecbea
+Author: Doan Quoc Tien <doanquoctien3005@gmail.com>
+Date:   Thu Jul 4 09:45:28 2024 +0700
+
+    done
+
+[33mcommit d5ecbea9778caaffaa0650836bbaa0f95734302d[m
+Author: Đoàn Quốc Tiến <94768549+bearbae@users.noreply.github.com>
+Date:   Wed Jul 3 23:46:49 2024 +0700
+
+    Initial commit
+
+[33mcommit d8bc3739a4d197ade16eb760923c2104f3483b7c[m
+Author: Vu Thi Ngoc <56816494+ngocvt-0484@users.noreply.github.com>
+Date:   Tue Aug 29 15:55:34 2023 +0700
+
+    Create database-ci.yml
+
+[33mcommit 324b62cc19c84731b9098e33dd0eadd50b15219a[m
+Author: Vu Thi Ngoc <56816494+ngocvt-0484@users.noreply.github.com>
+Date:   Tue Aug 29 15:54:55 2023 +0700
+
+    Create .sun-ci.yml
+
+[33mcommit 8a7b54c9e5eef5cfb4f57d8e247683885491e060[m
+Merge: 45f06c2 521c0bf
+Author: Vu Thi Ngoc <56816494+ngocvt-0484@users.noreply.github.com>
+Date:   Tue Aug 29 10:07:28 2023 +0700
+
+    Merge pull request #1 from ngocvt-0484/config_project
+    
+    config pullrequest template
+
+[33mcommit 521c0bfa7e865ae80dbd6aad8ef802e69c908ef1[m
+Author: Ngoc Vu <vu.thi.ngoc@sun-asterisk.com>
+Date:   Tue Aug 29 10:07:36 2023 +0700
+
+    config pullrequest template
+
+[33mcommit 45f06c2bd84f00d21790eda09b3522c0efcb4406[m
+Author: Vu Thi Ngoc <56816494+ngocvt-0484@users.noreply.github.com>
+Date:   Wed Aug 16 13:17:31 2023 +0700
+
+    Update .gitignore
+
+[33mcommit 6ce5e511de015f341f02de8109812dca9678204b[m
+Author: Vu Thi Ngoc <56816494+ngocvt-0484@users.noreply.github.com>
+Date:   Mon Aug 14 13:27:13 2023 +0700
+
+    Update README.md
+
+[33mcommit 3de8ca56219c611a92be4487e1227a3730362336[m
+Author: Vu Thi Ngoc <56816494+ngocvt-0484@users.noreply.github.com>
+Date:   Mon Aug 14 10:48:26 2023 +0700
+
+    Update README.md
+
+[33mcommit 652116a2fffcdcd2b3d7814ee75263c2d824ea2d[m
+Author: Vu Thi Ngoc <56816494+ngocvt-0484@users.noreply.github.com>
+Date:   Mon Aug 14 10:45:10 2023 +0700
+
+    Update README.md
+
+[33mcommit 679978f96c4f1c3261a967fe4408e9b3ee38ff49[m
+Author: Ngoc Vu <vu.thi.ngoc@sun-asterisk.com>
+Date:   Mon Aug 14 10:40:48 2023 +0700
+
+    Init project
