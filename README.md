@@ -11,3 +11,7 @@
 - Chạy lệnh để tạo database: rails db:create
 - Bật server: rails s
 
+
+# sample_app
+- Push test
+>>>>>>> d5ecbea9778caaffaa0650836bbaa0f95734302d
