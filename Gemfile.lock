@@ -264,6 +264,7 @@ DEPENDENCIES
   bootstrap-sass (= 3.4.1)
   capybara
   debug
+  i18n
   importmap-rails
   jbuilder
   mysql2 (~> 0.5)

@@ -11,7 +11,11 @@
 - Tạo config database cho dự án: cp config/database.yml.example config/database.yml
 - Chạy lệnh để tạo database: rails db:create
 - Bật server: rails s
-Truy cập đường dẫn http://localhost:3000/ hiển thị Rails là thành công
+
+
+
+# sample_app
+>>>>>>> d5ecbea9778caaffaa0650836bbaa0f95734302d
 
 
 
