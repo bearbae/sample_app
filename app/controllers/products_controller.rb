@@ -26,13 +26,9 @@ class ProductsController < ApplicationController
           redirect_to product_url(@product),
                       notice: "Product was successfully created."
         end
-        format.json do
-          render :show, status: :created, location: @product
-        end
+        format.json{render :show, status: :created, location: @product}
       else
-        format.html do
-          render :new, status: :unprocessable_entity
-        end
+        format.html{render :new, status: :unprocessable_entity}
         format.json do
           render json: @product.errors, status: :unprocessable_entity
         end
@@ -48,13 +44,9 @@ class ProductsController < ApplicationController
           redirect_to product_url(@product),
                       notice: "Product was successfully updated."
         end
-        format.json do
-          render :show, status: :ok, location: @product
-        end
+        format.json{render :show, status: :ok, location: @product}
       else
-        format.html do
-          render :edit, status: :unprocessable_entity
-        end
+        format.html{render :edit, status: :unprocessable_entity}
         format.json do
           render json: @product.errors, status: :unprocessable_entity
         end

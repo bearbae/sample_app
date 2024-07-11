@@ -3,10 +3,14 @@ class CreateUsers < ActiveRecord::Migration[7.0]
     create_table :users do |t|
       t.string :name
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> chapter_7
       t.string :email
 
       t.timestamps
     end
+<<<<<<< HEAD
 =======
       t.string :email, unique: true
 
@@ -15,5 +19,7 @@ class CreateUsers < ActiveRecord::Migration[7.0]
 
     add_index :users, :email, unique: true
 >>>>>>> chapter_6
+=======
+>>>>>>> chapter_7
   end
 end
