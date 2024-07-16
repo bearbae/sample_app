@@ -48,7 +48,6 @@ gem "bootsnap", require: false
 gem "bootstrap-sass", "3.4.1"
 gem "sassc-rails"
 
-
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html]
 # gem "image_processing", "~> 1.2"
 

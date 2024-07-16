@@ -18,6 +18,3 @@
 >>>>>>> d5ecbea9778caaffaa0650836bbaa0f95734302d
 
 
-
-# sample_app
-
