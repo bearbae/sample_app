@@ -3,7 +3,8 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
 
-    flash[:warning] = "Not found user"
+
+    flash[:warning] = t("controller.not_find")
     redirect_to root_path
   end
 
@@ -14,8 +15,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-
-      flash[:success] = "Tao thanh cong"
+      flash[:success] = t("controller.create_succeed")
 
       redirect_to @user, status: :see_other
     else

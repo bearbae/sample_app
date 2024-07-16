@@ -34,10 +34,20 @@ en:
       base_title: 'Ruby on Rails Tutorial Sample App'
   views:
     title: "Sample App"
-    test: "hihi"
     home: "Home"
     help: "Help"
+    user: "Users"
     login: "Log In"
+    logout: "Log Out"
+    profile: "Profile"
+    setting: "Settings"
+  users:
+    create_account: "Create_account"
+    sign_up: "Sign_up"
+  controller:
+    error_email: "invalid_email_password_combination"
+    create_succeed: "Tao thanh cong"
+    not_find: "Not found user"
   product:
     notice_1: "Product was successfully created."
     notice_2: "Product was successfully updated."
