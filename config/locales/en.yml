@@ -41,6 +41,7 @@ en:
     logout: "Log Out"
     profile: "Profile"
     setting: "Settings"
+    account: "Account"
   users:
     create_account: "Create_account"
     sign_up: "Sign_up"
@@ -52,3 +53,6 @@ en:
     notice_1: "Product was successfully created."
     notice_2: "Product was successfully updated."
     notice_3: "Product was successfully destroyed."
+  sessions:
+    new_user: "new_user?"
+    signup_now: "sign_up_now!"
