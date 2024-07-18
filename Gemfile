@@ -29,8 +29,12 @@ gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
+gem "config"
+gem "faker"
 gem "i18n"
-
+gem "i18n-js"
+gem "pagy"
+gem "rails-i18n"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

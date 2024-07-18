@@ -49,6 +49,12 @@ en:
     error_email: "invalid_email_password_combination"
     create_succeed: "Tao thanh cong"
     not_find: "Not found user"
+    update: "Cap nhat thanh cong"
+    login_succed: "Welcome to the sample app!"
+    delete_user: "User deleted"
+    delete_fail: "Delete fail!"
+    please: "Please log in."
+    warning: "You cannot edit this account."
   product:
     notice_1: "Product was successfully created."
     notice_2: "Product was successfully updated."

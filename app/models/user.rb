@@ -1,10 +1,13 @@
 class User < ApplicationRecord
   before_save :downcase_email
+  scope :sorted_by_created_at, -> { order(created_at: :asc) }
 
-  validates :name, presence: true, length: {maximum: Settings::NAME}
-  validates :email, presence: true, length: {maximum: Settings::EMAIL},
-                    format: {with: Settings::VALID_EMAIL_REGEX},
+  validates :name, presence: true, length: {maximum: Settings.digit_50}
+  validates :email, presence: true, length: {maximum: Settings.digit_255},
+                    format: {with: Regexp.new(Settings.VALID_EMAIL_REGEX)},
                     uniqueness: true
+  validates :password, presence: true, length: {minimum: Settings.digit_6},
+                                       allow_nil: true
 
   has_secure_password
   attr_accessor :remember_token
