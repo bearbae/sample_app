@@ -59,6 +59,11 @@ en:
     account_active: "Account activated!"
     invalid_account: "Invalid activation link"
     warning_sessions: "Account not activated. Check your email for the activationlink."
+    mail_send: "Email sent with password reset instructions"
+    not_find_mail: "Email address not found"
+    resert_succeed: "Reset password success"
+    user_actived: "User is in_actived!"
+    password_resert_announce: "Password reset has expired."
   product:
     notice_1: "Product was successfully created."
     notice_2: "Product was successfully updated."
@@ -66,6 +71,7 @@ en:
   sessions:
     new_user: "new_user?"
     signup_now: "sign_up_now!"
+    forgot_pass: "(forgot password)"
   mailers:
     subject: "Account activation"
-    mail_to: "to@example.org"
+    password_resert: "Password reset"
