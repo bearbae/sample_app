@@ -8,3 +8,7 @@ db/schema.rb linguist-generated
 vendor/* linguist-vendored
 
 *.rb   whitespace=space-before-tab,indent-with-non-tab,trailing-space
+
+*.scss linguist-language=SCSS
+*.sass linguist-language=Sass
+

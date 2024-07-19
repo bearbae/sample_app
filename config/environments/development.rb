@@ -67,4 +67,28 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    user_name: ENV['MAILTRAP_USERNAME'],
+    password: ENV['MAILTRAP_PASSWORD'],
+    address: ENV['MAILTRAP_ADDRESS'],
+    port: ENV['MAILTRAP_PORT'],
+    authentication: :login,
+    enable_starttls_auto: true, # Bật STARTTLS nếu cần
+    open_timeout: 10, # Tăng thời gian chờ kết nối
+    read_timeout: 10  # Tăng thời gian chờ đọc dữ liệu
+  }
+
+  # Hiển thị lỗi khi gửi email
+  config.action_mailer.raise_delivery_errors = true
+
+  # Không lưu trữ bộ nhớ đệm
+  config.action_mailer.perform_caching = false
+
+  # Đặt URL mặc định cho Action Mailer
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
 end

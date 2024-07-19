@@ -45,6 +45,7 @@ en:
   users:
     create_account: "Create_account"
     sign_up: "Sign_up"
+    check_mail: "Please check your email to activate your account."
   controller:
     error_email: "invalid_email_password_combination"
     create_succeed: "Tao thanh cong"
@@ -55,6 +56,9 @@ en:
     delete_fail: "Delete fail!"
     please: "Please log in."
     warning: "You cannot edit this account."
+    account_active: "Account activated!"
+    invalid_account: "Invalid activation link"
+    warning_sessions: "Account not activated. Check your email for the activationlink."
   product:
     notice_1: "Product was successfully created."
     notice_2: "Product was successfully updated."
@@ -62,3 +66,6 @@ en:
   sessions:
     new_user: "new_user?"
     signup_now: "sign_up_now!"
+  mailers:
+    subject: "Account activation"
+    mail_to: "to@example.org"
