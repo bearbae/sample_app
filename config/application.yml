@@ -1,0 +1,6 @@
+# config/application.yml
+MAILTRAP_USERNAME: 'a16a6784f58dc4'
+MAILTRAP_PASSWORD: '451b444eb42458'
+MAILTRAP_ADDRESS: 'sandbox.smtp.mailtrap.io'
+MAILTRAP_PORT: 2525
+

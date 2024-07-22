@@ -32,9 +32,12 @@ gem "jbuilder"
 gem "config"
 gem "faker"
 
+gem "active_storage_validations", "0.9.8"
 gem "figaro"
 gem "i18n"
 gem "i18n-js"
+gem "image_processing", "1.12.2"
+gem "mini_magick", "~> 4.13.2"
 gem "pagy"
 gem "rails-i18n"
 

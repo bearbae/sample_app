@@ -8,7 +8,9 @@ class UsersController < ApplicationController
     @pagy, @users = pagy(User.sorted_by_created_at, items: Settings.digit_10)
   end
 
-  def show; end
+  def show
+    @page, @microposts = pagy @user.microposts, items: Settings.digit_10
+  end
 
   def new
     @user = User.new

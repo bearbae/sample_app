@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   get "password_resets/new"
   get "password_resets/edit"
   get "password_resets/create"
@@ -20,4 +19,7 @@ Rails.application.routes.draw do
   resources :users, only: %i(new create show edit update index destroy)
   resources :account_activations, only: %i(edit)
   resources :password_resets, only: %i(new create edit update)
+
+  resources :microposts, only: %i(create destroy)
+
 end

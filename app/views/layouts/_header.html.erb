@@ -3,7 +3,7 @@
     <%= link_to t("views.title"), "#", id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t("views.home"), "#" %></li>
+        <li><%= link_to t("views.home"), root_path %></li>
         <li><%= link_to t("views.help"), "#" %></li>
         <% if logged_in? %>
           <li><%= link_to t("views.user"), users_path %></li>

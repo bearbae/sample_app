@@ -2,6 +2,7 @@ class User < ApplicationRecord
   before_save :downcase_email
   before_create :create_activation_digest
 
+  has_many :microposts, dependent: :destroy
   scope :sorted_by_created_at, ->{order(created_at: :asc)}
 
   validates :name, presence: true, length: {maximum: Settings.digit_50}
@@ -13,6 +14,10 @@ class User < ApplicationRecord
 
   has_secure_password
   attr_accessor :remember_token, :activation_token, :reset_token
+
+  def feed
+    microposts
+  end
 
   class << self
     def digest string
