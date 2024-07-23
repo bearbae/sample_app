@@ -12,4 +12,5 @@ class Micropost < ApplicationRecord
                                   message: "should be less than 5MB"}
 
   scope :newest, ->{order created_at: :desc}
+  scope :relate_post, ->(user_ids){where user_id: user_ids}
 end

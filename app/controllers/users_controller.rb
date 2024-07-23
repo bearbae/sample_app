@@ -23,7 +23,6 @@ class UsersController < ApplicationController
       flash[:info] = t("users.check_mail")
       redirect_to root_url, status: :see_other
     else
-      # flash[:error] = @user.errors.full_messages
       render :new, status: :unprocessable_entity
     end
   end
@@ -48,19 +47,36 @@ class UsersController < ApplicationController
     redirect_to users_path
   end
 
+  def following
+    @title = t("controller.following")
+    @pagy, @users = pagy @user.following, items: Settings.digit_10
+    render :show_follow
+  end
+
+  def followers
+    @title = t("controller.follower")
+    @pagy, @users = pagy @user.followers, items: Settings.digit_10
+    render :show_follow
+  end
+
   private
   def user_params
-    params.require(:user).permit :name,
-                                 :email,
-                                 :password,
+    params.require(:user).permit :name, :email, :password,
                                  :password_confirmation
   end
 
   def find_user
     @user = User.find_by id: params[:id]
-    return if @user
+    unless @user
+      flash[:warning] = t("controller.not_find")
+      redirect_to root_url
+    end
+  end
 
-    flash[:danger] = t("controller.not_find")
+  def correct_user
+    return if current_user? @user
+
+    flash[:error] = t("controller.warning")
     redirect_to root_url
   end
 
@@ -70,13 +86,6 @@ class UsersController < ApplicationController
     store_location
     flash[:danger] = t("controller.please")
     redirect_to login_url
-  end
-
-  def correct_user
-    return if current_user? @user
-
-    flash[:error] = t("controller.warning")
-    redirect_to root_url
   end
 
   def admin_user
